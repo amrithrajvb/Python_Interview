@@ -1,0 +1,8 @@
+#all datas are consider as text
+hi
+helo
+
+2 type of operation
+read..file content read...r
+write..add data..w
+append...add data...a#both are same(write,append)
