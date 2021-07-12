@@ -15,7 +15,9 @@ class Bank:
         1000: {"acconu_num": 1000, "password": "user1", "balance": 3000},
         1001: {"acconu_num": 1001, "password": "user2", "balance": 4000},
         1002: {"acconu_num": 1002, "password": "user2", "balance": 5000},
-        1003: {"acconu_num": 1003, "password": "user3", "balance": 6000}
+        1003: {"acconu_num": 1003, "password": "user3", "balance": 6000},
+        1004: {"acconu_num": 1004, "password": "user4", "balance": 7000},
+        
     }
     session={}
     def validate_account(self,acc_no):
