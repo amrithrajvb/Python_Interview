@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+.container img{
+    width: 240px;
+    height: 160px;
+}
+.res{
+    background-color: rgb(2, 48, 70);
+    width: 21%;
+   height: 1270px;
+ 
+}
+
+.container hr{
+    width: 35%;
+    height: 3px;
+    background-color: white;
+    
+}
+.contact{
+    color: white;
+}
+.container .mail{
+    width: 32px;
+    height: 30px;
+}
+.container .mail_name{
+color: white;
+
+}
+
+.mm{
+margin-left: 12px;
+}
+.skill{
+    color: white;
+}
+
+.language{
+    color: white;
+}
+
+ .details {
+     width: 75%;
+   position: absolute;
+    top: 30px;
+    left: 300px;
+}
+
+.heading{
+    padding-left: 165px;
+    
+    background-color:#ebedef;
+}
+.details hr{
+    width: 120px;
+    height: 3px;
+    position: absolute;
+    left:230px;
+    top:40px;
+
+}
