@@ -1,9 +1,12 @@
 lis=[1,2,3,4,1,4,"helo",True]
-for i in lis:
-    print(i)
-lis.remove(1)
+a=[6,9]
+lis.extend(a)
 print(lis)
-lis.clear()
-print(lis)
-del lis
-print(lis)
+# for i in lis:
+#     print(i)
+# lis.remove(1)
+# print(lis)
+# lis.clear()
+# print(lis)
+# del lis
+# print(lis)

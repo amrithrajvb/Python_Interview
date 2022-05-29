@@ -7,3 +7,14 @@ def pattern(row):
             num = num + 1
         print("\r")
 pattern(5)
+
+
+def pattern(row):
+
+    for i in range(row,0,-1):
+        num = 1
+        for j in range(0, i ):
+            print(num, end=" ")
+            num = num + 1
+        print("\r")
+pattern(5)

@@ -48,3 +48,10 @@ def triangle(n):
             print("* ",end="")
         print("\r")
 triangle(6)
+
+inp=int(input("enter the reverse limit level"))
+for i in range(0,inp):
+    print(" " * i ,end=" ")
+    for j in range(0, i+1):
+        print("*", end=" ")
+    print()

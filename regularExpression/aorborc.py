@@ -1,4 +1,4 @@
-x='[abc]' #either a b or c
+# x='[abc]' #either a b or c
 import  re
 x="[abc]"
 matcher=re.finditer(x,"abc @kjfkdabc")

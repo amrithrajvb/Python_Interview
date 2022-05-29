@@ -12,26 +12,26 @@
 
 
 
-import re
-n="Asdsd Bdssdsd Hk hK Jll"
-x="[A-Z][a-z]+"
-matcher=re.finditer(x,n)
-for match in matcher:
-    print(match.start())
-    print(match.group())
-
-
-
 # import re
-# n=input("enter the string")
-#
-# x="^a\d*b$"
-# matcher=re.fullmatch(x,n)
-# if matcher is not None:
-#
-#     print("valid")
-# else:
-#     print("invalid")
+# n="Asdsd Bdssdsd Hk hK Jll"
+# x="[A-Z][a-z]+"
+# matcher=re.finditer(x,n)
+# for match in matcher:
+#     print(match.start())
+#     print(match.group())
+
+
+
+import re
+n=input("enter the string")
+
+x="^a\d*b$"
+matcher=re.fullmatch(x,n)
+if matcher is not None:
+
+    print("valid")
+else:
+    print("invalid")
 
 
 

@@ -9,7 +9,7 @@
 
 #checking sybols
 import re
-x="[^0-9a-zA-Z]"
+x="[^0-9a-zA-Z]"#X="[\W]"
 matcher=re.finditer(x,"123abc@kjfkADAS10656847498FSDdabc")
 for match in matcher:
     print(match.start())

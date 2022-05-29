@@ -15,34 +15,105 @@
 #
 # #updating values
 #
-# dict1={'name':'amrith','age':12,'class':8}
-# dict1['name']='arun'
-# print(dict1)
-# #add keyvalue
+dict1={'name':'amrith','age':12,'class':8}
+dict1['name']='arun'
+print(dict1)
+# # #add keyvalue
 # dict1['number']=558555555
-# dict1['mom']="sara"
+# # dict1['mom']="sara"
 # print(dict1)
 #
-# #update
 #
+#
+#
+#
+#
+#
+#
+#
+# #
+# # #update
+# #
 # dict1.update({'location':'kochi'})
 # print(dict1)
+# #
+# #
+# # #key remove
+# # del dict1['location'] #remove element with key value
+# # dict1.clear()  #to clear all elements
+# # del dict1    #delete entire dictionary
+# # print(dict1)
 #
-#
-# #key remove
-# del dict1['location'] #remove element with key value
-# dict1.clear()  #to clear all elements
-# del dict1    #delete entire dictionary
-# print(dict1)
-
-#integer value
-dicc={0:10,2:30}
-print(dicc)
-dicc.update({4:200})
-print(dicc)
+# #integer value
+# dicc={0:10,2:30}
+# print(dicc)
+# dicc.update({4:200})
+# print(dicc)
 
 
 #nesting
 
-#a={1:2,{6:7}}#not possiblea={1:2,6:{7,6}}
-#print(a)
+# a={1:2,{6:7}} #not possiblea={1:2,6:{7,6}}
+# print(a)
+import calendar
+#
+#
+# def dicts(z):
+#     d={}
+#     for i in range(z):
+#         a = input("sdasf")
+#         b = input("adfdf")
+#         d[a] = b
+#     print(d)
+#
+#
+#
+#
+# c=int(input("enter the limit"))
+# dicts(c)
+
+str = 'coldd'
+dic={}
+i=0
+# enumerate()
+list_enumerate = dict(list(enumerate(str)))
+print(list_enumerate)
+#
+# i+=1
+
+# m={}.fromkeys(["maths","eng","sc"],0)
+# print(m)
+#
+c={x:x*x for x in range(6)}
+print(c)
+
+
+d={x:x*x for x in range(5)}
+print(d)
+
+
+# Demonstration of list insert() method
+
+a=[]
+a.append(str)
+print(list(set(a)))
+odd = [1, 9,8,7]
+c=[10,44,9]
+print(list(set(odd + c)))
+a=list(filter(lambda x:x%2==0,odd))
+print(a)
+
+print(odd)
+
+my_dict = {"java": 100, "python": 112, "c": 11}
+
+
+def sample(val):
+    for key, value in my_dict.items():
+        if val == value:
+            return key
+    return "not exist"
+
+
+inp = int(input("enter the key"))
+print(sample(inp))

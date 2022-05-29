@@ -7,6 +7,7 @@ if num1 > 1:
              print("number is not prime")
              break
     else:
+
         print("number is prime")
 else:
-    print("please enetet the positive nmber")
+    print("please entet the positive nmber")

@@ -2,6 +2,7 @@ am=input("print")
 count=0
 for i in am:
     count=am.count(i)
+    print(count)
     if count > 1:
         break
 print("first recursive element is",i)

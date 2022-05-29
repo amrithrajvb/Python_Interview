@@ -1,18 +1,18 @@
 
 #while loop
 
-nterm=10
-
-no1=0
-no2=1
-count=0
-print("finanacci series")
-while count < nterm:
-    print(no1)
-    nth=no1+no2
-    no1=no2
-    no2=nth
-    count +=1
+# nterm=10
+#
+# no1=0
+# no2=1
+# count=0
+# print("finanacci series")
+# while count < nterm:
+#     print(no1)
+#     nth=no1+no2
+#     no1=no2
+#     no2=nth
+#     count +=1
 
     #for loop
 inp= int(input("enter the number"))

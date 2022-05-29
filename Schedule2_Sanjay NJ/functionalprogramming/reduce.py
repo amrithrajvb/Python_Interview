@@ -12,5 +12,11 @@ print(total)
 
 #highest-return only one value
 
-high=reduce(lambda num1,num2:num1 if num1>num2 else num2,lis)
+high=reduce(lambda num1,num2:num1 if num1<num2 else num2,lis)
 print(high)
+
+
+
+
+
+

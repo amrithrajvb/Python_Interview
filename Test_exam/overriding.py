@@ -11,4 +11,4 @@ class Computer(Book):
 
 c=Computer()
 m=input("please enter this text for")
-c.pvalue(m)
+c.pvalue(m,"fdfd")

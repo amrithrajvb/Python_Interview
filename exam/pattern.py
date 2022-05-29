@@ -1,7 +1,7 @@
 a=int(input("enter the initial range"))
-b=int(input("enter the final range"))
+# b=int(input("enter the final range"))
 r=5
-for i in range(a,b):
+for i in range(a,r):
     if(i%2==0):
 
         for k in range(r, 0, -1):

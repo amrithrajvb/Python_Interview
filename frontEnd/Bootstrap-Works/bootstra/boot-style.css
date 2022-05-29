@@ -1,0 +1,42 @@
+.container-fluid img{
+    height: 40px;
+}
+.navs{
+    background-color: #7952b3;
+}
+
+.nv{
+    color:  white !important;
+}
+
+.nav-item a:hover{
+    color: rgb(240, 231, 231) !important;
+
+}
+.fnt{
+    justify-content: space-evenly;
+}
+.fnt i{
+    /* height: 22px; */
+    padding:7px;
+
+}
+.fnt .im{
+    margin-left: 53px;
+    /* justify-content: space-between; */
+    
+}
+
+.bk{
+    border: 1px solid burlywood !important;
+    color: burlywood;
+    margin-top: 8px;
+    margin-right: 1px;
+    
+}
+
+.bk:hover{
+    background-color: burlywood;
+    color: rgb(15, 10, 10);
+    border: burlywood solid 2x;
+}

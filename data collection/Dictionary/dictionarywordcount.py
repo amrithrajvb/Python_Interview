@@ -31,14 +31,41 @@
 # print(count)
 
 #count keyword using
+#
+# str=input("please enter")
+# words=str.split(" ")
+# dic={}
+# for i in words:
+#     count=words.count(i)
+#     dic.update({i:count})
+# print(dic)
 
-str=input("please enter")
-words=str.split(" ")
-dic={}
+#
+# str=input("enter the string")
+# # words=str.split(" ")
+# # dic={}
+# # for i in words:
+# #     count=words.count(i)
+# #     dic.update({i:count})
+# # print(dic)
+# c={}
+#
+# for i in str:
+#     count=str.count(i)
+#     c.update({i:count})
+# print(c)
+#
+
+
+
+str=input(" enter the string")
+words=str.split(",")
+c={}
 for i in words:
     count=words.count(i)
-    dic.update({i:count})
-print(dic)
+    c.update({i:count})
+print(c)
+
 
 
 

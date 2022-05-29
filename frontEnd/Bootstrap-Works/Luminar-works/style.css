@@ -1,8 +1,16 @@
+.container-fluid1{
+    background-color: #5e068a;
+    color: white;
+    height: 44px;
+    text-align: center;
+}
+
 .nav-item a{
     font-size: 14px;
     font-weight: 500;
     line-height: 26px;
     color:#2d3e50 !important;
+    
     
 }
 .nav-item a:hover{
@@ -63,7 +71,9 @@ background-color: #5e068a;
 color: white;
 text-decoration: none;
 }
-
+.vr:hover{
+    background-color: #9e6ab9;
+}
 .container h3{
     color: #5e068a;
     font-weight: 580;
@@ -72,18 +82,25 @@ text-decoration: none;
 .container span{
     color:#5e068a99;
 }
+
+.col-6 .crsimg{
+width: 550px;
+height: 450;
+}
 .container p{
     line-height: 32px;
     font-size: 16px;
 }
  .btns{
-    padding: 16px 27px;
-    font-weight: 600;
+    width: 180px;
+    height: 50px;
+    color: #5e068a;
+    background-color: white;
+    
+    font-weight: 400;
     margin-top: 21px;
     border-radius: 50px;
-    background-color:#5e068a ;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #5e068a;
 }
 .btns:hover{
     background-color: white;
@@ -104,26 +121,12 @@ background-color: #5e068a;
     margin-top: 20px;
 }
 
-.container .col-6 img{
-    height: 350px;
-    /* background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-    /* border-color:solid 4x red; */
-    
-    width: 560px;
-}
 
-.course .container h2{
-    font-size: 32px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    padding-top: 100;
-    color: #5e068a;
-    font-weight: 580;
-    line-height: 1.2;
-    margin: 0 auto;
-    text-align: center;
+.container h2{
+        color: #5e068a;
+        font-size: 32px;
+        font-weight: 700;
+    
 }
 
 .container .row h3{
@@ -134,13 +137,16 @@ background-color: #5e068a;
     color: #5e068a;
     margin-top: 40px;;
 }
+.cap{
+    margin-top: 72px;
+}
 .container .row .para{
   
     color: #5e068a;
     font-size: 20px;
     font-weight: 580;
 }
-.course{
+.ab,.bc{
     background-color: #f5f5f5;
     width: 100%;
 }
@@ -152,26 +158,14 @@ background-color: #5e068a;
     background-color: white;
 } */
 
-.course .container .row .imp{
-    height: 20%;
-}
-.course .container .cp {
 
- 
-    background-color: white;
-    height: 470px;
-}
-
-.crs{
-    margin-left: 600px;
-}
-.crs:hover{
+.btns:hover{
     background-color: #5e068a;
     color: white;
     border: 2px solid #5e068a;
 }
 
-.crs{
+/* .crs{
     padding: 16px 27px;
     font-weight: 600;
     margin-top: 21px;
@@ -179,4 +173,6 @@ background-color: #5e068a;
     background-color:white ;
     border: 2px solid #5e068a;
     color: #5e068a;
-}
+} */
+
+

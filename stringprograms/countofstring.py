@@ -10,4 +10,11 @@ for i in a:
         # print(c)
 print(count)
 
-
+# a="malayaaaaaaaal"
+# inp=input("enter a string")
+#
+# count=0
+# for a in inp:
+#     count+=1
+#
+# print(a.count('a'))

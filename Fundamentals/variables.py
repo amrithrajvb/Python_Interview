@@ -1,5 +1,6 @@
 var = 10
 print(var)
+
 # string..str
 
 a="Luminar"

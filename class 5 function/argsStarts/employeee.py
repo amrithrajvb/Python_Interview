@@ -7,5 +7,5 @@ employee={
 
 #print name of employee whose eid=1002
 
-print(employee[1002]['ename']['salary'])
+print(employee[1002]['ename'])
 #full print print(employee[1002])

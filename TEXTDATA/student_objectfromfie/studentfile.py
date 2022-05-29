@@ -15,10 +15,10 @@ class Student:
 f=open("student",'r')
 for line in f:
     words=line.rstrip("\n").split(",")
-    # name=words[0]
-    # rollno=words[1]
-    # cls=words[2]
-    # mark=words[3]
-    # obj=Student(name,rollno,cls,mark)
-    # print(obj)
-    # obj.printvalue()
+    name=words[0]
+    rollno=words[1]
+    cls=words[2]
+    mark=words[3]
+    obj=Student(name,rollno,cls,mark)
+    print(obj)
+    obj.printvalue()

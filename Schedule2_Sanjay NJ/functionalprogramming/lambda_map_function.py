@@ -15,15 +15,15 @@
 
 lsst=[2,3,4,8,10,7]
 lsst=[1,2,3,4,5,6,7]#second
-# ls=[]
-# for i in lsst:
-#     if i<5:
-#        ls.append(i-1)
-#     else:
-#         ls.append(i+1)
-#
-#
-# print(ls)
+ls=[]
+for i in lsst:
+    if i<5:
+       ls.append(i-1)
+    else:
+        ls.append(i+1)
+
+
+print(ls)
 
 #x-1 if x < 5 else x+1-territorry method
 numbe=list(map(lambda x:x-1 if x < 5 else x+1,lsst))
