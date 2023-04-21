@@ -8,6 +8,7 @@
 from functools import reduce
 lis=[1,2,3,4,5,6,7]
 total=reduce(lambda num1,num2:num1+num2,lis)
+
 print(total)
 
 #highest-return only one value

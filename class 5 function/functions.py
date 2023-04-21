@@ -21,19 +21,11 @@ def removeBrakets(str):
         k.pop(cnt)
         for m in k:
           c=c+m
-    # print(c)
+
+    print(k)
     # print(k)
 
 
-    elif (str[n - cnt - 1] == ')'):
-        k.pop(n - cnt - 1)
-        for h in k:
-          c=c+h
-    # elif (str[(n-1) - cnt - 1] == ')'):
-
-
-    print(c)
-    print(k)
 
 if __name__=='__main__':
     str="a)b(c)d)"

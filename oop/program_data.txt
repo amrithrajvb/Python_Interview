@@ -1,0 +1,97 @@
+import pandas as pd
+
+#text file to xml
+a = pd.read_csv("input.txt", sep="|")
+print(type(a))
+a.style.format({"dob": lambda t: t.strftime("%m/%d/%Y")})
+a.to_xml("Table.xml")
+
+html_file = a.to_xml()
+
+
+#xml to csv
+
+a = pd.read_xml("Table.xml")
+
+a.style.format({"dob": lambda t: t.strftime("%m/%d/%Y")})
+print(a)
+a.to_csv("data.csv",index=False)
+
+
+#csv to xml
+a = pd.read_csv("data.csv")
+
+a.style.format({"dob": lambda t: t.strftime("%d/%m/%Y")})
+print(a)
+a.to_xml("new_data.xml",index=False)
+
+
+
+#when we consider to fetch the data from Database.
+
+import sys
+from pyspark.sql import *
+import findspark
+findspark.init()
+import numpy as np
+import pandas as pd
+
+if __name__ == "__main__":
+    print("Application Started")
+
+    spark = SparkSession \
+        .builder \
+        .appName("HelloSpark") \
+        .master("local[*]") \
+        .config("spark.jars.packages","mysql:mysql-connector-java:8.0.25")\
+        .getOrCreate()
+
+    print(spark.sparkContext.appName)
+
+    mysql_db_driver="com.mysql.jdbc.Driver"
+    table_name="ustapp_myuser"
+    host_name="localhost"
+    port_no=str(3306)
+    username="root"
+    password="Password@123"
+    database_name="ustfd"
+
+
+    mysql_select_query=None
+    mysql_select_query="(select * from " + table_name+")as users"
+    print("Mysql_select_query")
+    print(mysql_select_query)
+
+
+    mysql_jdbc_url="jdbc:mysql://"+host_name+":"+port_no+"/"+database_name
+
+    print("jdbc url:")
+    print(mysql_jdbc_url)
+
+    users_df=spark.read.format("jdbc")\
+    .option("url",mysql_jdbc_url) \
+    .option("driver", mysql_db_driver) \
+    .option("dbtable", mysql_select_query) \
+    .option("user", username)\
+    .option("password",password)\
+    .load()
+
+    users_df.show()
+    # cc=users_df.to_pandas_on_spark()
+    # print(type(cc))
+    users_df.DataFrameWriter.csv("cc.csv")
+    # users_df.to
+
+
+
+    # datas = pd.DataFrame(users_df)
+    # print("datas", datas)
+
+    # users_df.to_xml("Table.xml")
+
+    spark.stop()
+
+    print("completed")
+
+
+Note: I tried to write the data into any type file but couldn't execute successfully.

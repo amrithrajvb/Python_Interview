@@ -15,9 +15,18 @@
 #
 # #updating values
 #
-dict1={'name':'amrith','age':12,'class':8}
-dict1['name']='arun'
-print(dict1)
+# dict1={'name':'amrith','age':12,'class':8}
+# dict1['name']='arun'
+# print(dict1)
+
+# dict1={"name":"arjun","age":12}
+# dict1.update({"loc":"palakkad","company":"ust"})
+# print(dict1)
+# del dict1["loc"]
+# print(dict1)
+
+
+
 # # #add keyvalue
 # dict1['number']=558555555
 # # dict1['mom']="sara"
@@ -65,31 +74,29 @@ import calendar
 #         b = input("adfdf")
 #         d[a] = b
 #     print(d)
-#
-#
-#
-#
 # c=int(input("enter the limit"))
 # dicts(c)
-
+#
 str = 'coldd'
-dic={}
-i=0
-# enumerate()
-list_enumerate = dict(list(enumerate(str)))
-print(list_enumerate)
+# dic={}
+# i=0
+# # enumerate()
+# list_enumerate = dict(list(enumerate(str)))
+# print(list_enumerate)
 #
 # i+=1
 
-# m={}.fromkeys(["maths","eng","sc"],0)
-# print(m)
-#
-c={x:x*x for x in range(6)}
-print(c)
+m={}.fromkeys(["maths","eng","sc"],0)
+print(m)
 
-
-d={x:x*x for x in range(5)}
+d={ x:x**2 for x in range(6) if x%2==0}
 print(d)
+# c={x:x*x for x in range(6)}
+# print(c)
+#
+#
+# d={x:x*x for x in range(5)}
+# print(d)
 
 
 # Demonstration of list insert() method
@@ -100,20 +107,29 @@ print(list(set(a)))
 odd = [1, 9,8,7]
 c=[10,44,9]
 print(list(set(odd + c)))
-a=list(filter(lambda x:x%2==0,odd))
-print(a)
-
-print(odd)
+# a=list(filter(lambda x:x%2==0,odd))
+# print(a)
+#
+# print(odd)
 
 my_dict = {"java": 100, "python": 112, "c": 11}
+def searchs(a):
+    for key,values in my_dict.items():
+        if a==key:
+            return values
+    return "doesn't exist"
 
 
-def sample(val):
-    for key, value in my_dict.items():
-        if val == value:
-            return key
-    return "not exist"
+inp=input("enter the key")
+print(searchs(inp))
 
-
-inp = int(input("enter the key"))
-print(sample(inp))
+#
+# def sample(val):
+#     for key, value in my_dict.items():
+#         if val == value:
+#             return key
+#     return "not exist"
+#
+#
+# inp = int(input("enter the key"))
+# print(sample(inp))

@@ -33,7 +33,7 @@
 #
 
 #luminar program
-lst=[1,6,5,8,7,9,18,11,12,13,14,15,16,17,18,19]
+lst=[6, 32, 3, 1]
 def bsearch():
     lst.sort()
     print(lst)

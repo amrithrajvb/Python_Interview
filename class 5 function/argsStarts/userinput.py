@@ -5,8 +5,19 @@ employee={
     1003:{"eid":1002,"ename":"anu","salary":45000,"designation":"analyst"}
 }
 
-# inp=int(input("please enter the employeeID"))
-# inp2=input("please enter the selection ename,salary,designation")
+inp=int(input("please enter the employeeID"))
+inp2=input("please enter the selection ename,salary,designation")
+
+if inp in employee and inp2 in employee[inp]:
+    print(employee[inp])
+else:
+    print("invalid id")
+
+
+
+
+
+
 # print(employee[inp][inp2])
 # # res=employee[inp]
 # # print(res[inp2])

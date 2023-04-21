@@ -1,4 +1,5 @@
-#when we use inheritache with constructor we need to add the attaribute list into child class constructor's list
+#when we use inheritache with constructor we need to add the attaribute list into child
+# class constructor's list
 #call the base class constuctor using Super() method
 class Person:
     def __init__(self,name,age):

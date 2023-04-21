@@ -17,3 +17,17 @@ vaccine("arun",28)
 def eligible_check(name,age):
     print(name)
 eligible_check("arjun",2)
+
+
+def check(func):
+    def wrapper(name,age):
+        if age<18:
+            print(name,"not eligible for vaccination")
+        else:
+            return func(name,age)
+    return wrapper
+
+@check
+def val(name,age):
+    print(name,age)
+val("arjun",3)

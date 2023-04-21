@@ -22,8 +22,12 @@ print(a(7,10))
 
 
 #using user input
-a=lambda num,num2:num+num2
-b=int(input("enter the first number"))
-c=int(input("enter the second number"))
-print(a(b,c))
+# a=lambda num,num2:num+num2
+# b=int(input("enter the first number"))
+# c=int(input("enter the second number"))
+# print(a(b,c))
 
+
+
+c=lambda a,b:a+b
+print(c(10,12))

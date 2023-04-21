@@ -11,3 +11,27 @@ print(words("good"))
 first=lambda word:word[0]
 print(first("good"))
 print(first("hello"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+c=lambda w:w[0]
+print(c("asawood"))

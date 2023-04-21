@@ -9,3 +9,13 @@ employee={
 
 print(employee[1002]['ename'])
 #full print print(employee[1002])
+
+
+print(employee[1000]["designation"])
+inp=1009
+abc="salary"
+
+if inp in employee and abc in employee[inp]:
+    print(employee[inp])
+else:
+    print("sorry")

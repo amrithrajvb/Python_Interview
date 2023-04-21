@@ -57,14 +57,51 @@
 #
 
 
+#
+# str=input(" enter the string")
+# words=str.split(",")
+# c={}
+# for i in words:
+#     count=words.count(i)
+#     c.update({i:count})
+# print(c)
+#
+# c={100:{300:{"a":{"number":10000}}}}
+# print(c[100][300]["a"]["number"])
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
 
-str=input(" enter the string")
-words=str.split(",")
+
+
+
+
+
+inputs=input("enter the string")
+# word=inputs.split("")
 c={}
-for i in words:
-    count=words.count(i)
+for i in inputs:
+    count=inputs.count(i)
     c.update({i:count})
-print(c)
+
+print("printss,",c)
+
 
 
 
