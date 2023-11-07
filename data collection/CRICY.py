@@ -27,6 +27,24 @@ for i in range(len(str)-1):
 print(count)
 
 
+str1 = "isincisinefsdfsdinedfsdagdhrtsyrine"
+str2 = "ine"
+len1 =len(str1)
+len2 = len(str2)
+Count = 0
+
+for i in range(len1 - len2 + 1):
+    j = 0
+    for k in range(i, i + len2):
+        if str1[k] != str2[j]:
+            break
+        j += 1
+    if j == len2:
+        Count += 1
+
+print(Count)
+
+
 a=[i for i in range(101) if i > 1 if all((i%j!=0)for j in range(2,i))]
 print(a)
 
