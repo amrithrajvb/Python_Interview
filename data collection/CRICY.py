@@ -67,7 +67,22 @@ print("---------------------")
 
 
 
+#substring
 
+class Solution:
+    def lengthOfLongestSubstring(self, m: str) -> int:
+        sets=set()
+        left=0
+        ans=0
+
+        for right in range(len(m)):
+            while m[right] in sets:
+                sets.remove(m[left])
+                left+=1
+            sets.add(m[right])
+            ans=max(ans,right-left+1)
+        print(sets)
+        return ans
 
 
 # cLASS METHOD
