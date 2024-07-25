@@ -5,7 +5,31 @@ print(ac("abA"))
 
 
 
+# output = 3a2b2c3a
 
+#occurence
+
+def abc(s):
+    if not s:
+        return " "
+        
+    data=""
+    current_char=s[0]
+    count=1
+    
+    for i in range(1,len(s)):
+        if s[i] == current_char:
+            count+=1
+        else:
+            data+=f"{count}{current_char}"
+            current_char=s[i]
+            count=1
+    data +=f"{count}{current_char}"
+    return data
+    
+Input = "aaabbccaaa"
+print(abc(Input))
+    
 
 def carpet(words):
     return "".join([" " if x in "aeiou" else x
