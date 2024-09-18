@@ -414,7 +414,8 @@ async def main():
 nest_asyncio.apply()
 if __name__ == "__main__":
 	asyncio.create_task(main())
-#
+
+
 #Generator
 def tasks(n):
     value = 0
@@ -427,3 +428,141 @@ def tasks(n):
 for i in tasks(4):
     print(i)
 #
+
+
+
+string merge :
+
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+        result = []
+        len1, len2 = len(word1), len(word2)
+        i = 0
+
+        # Alternate merging until we reach the end of the shorter string
+        while i < len1 and i < len2:
+            result.append(word1[i])
+            result.append(word2[i])
+            i += 1
+        
+        # Append remaining characters from the longer string
+        if i < len1:
+            result.append(word1[i:])
+        if i < len2:
+            result.append(word2[i:])
+
+        return ''.join(result)
+
+# Example usage:
+solution = Solution()
+print(solution.mergeAlternately("abc", "pqr"))  # Output: "apbqcr"
+print(solution.mergeAlternately("ab", "pqrs"))  # Output: "apbqrs"
+print(solution.mergeAlternately("abcd", "pq"))  # Output: "apbqcd"
+
+
+
+
+#Greatest Common Divisor of Strings-not completed
+
+
+class Solution:
+    def gcdOfStrings(self, str1: str, str2: str) -> str:
+        len1,len2=len(str1),len(str2)
+        i=0
+        r=[]
+        while i < len1 and i < len2:
+            if str1[i] not in r:
+                if str1[i] == str2[i]:
+                    r.append(str1[i])
+                i+=1
+            else:
+                r.remove(str1[i])
+        return ''.join(r)
+
+
+#count-common-words-with-one-occurrence
+
+class Solution:
+    def countWords(self, words1: List[str], words2: List[str]) -> int:
+
+        count1={}
+        count2={}
+        for i in words1:
+            if i not in count1:
+                count1[i]=1
+            else:
+                count1[i]+=1
+
+        for i in words2:
+            if i not in count2:
+                count2[i]=1
+            else:
+                count2[i]+=1
+
+        common_count=0
+        for word in count1:
+            if word in count2 and count1[word]==1 and count2[word]==1:
+                common_count+=1
+        return common_count
+
+za count
+x="zzzaa"
+count_z=0
+count_za=0
+for i in x:
+    if i=='z':
+        count_z+=1
+    if i=='a':
+        count_za+=count_z
+print(count_z)
+print(count_za)
+
+def is_palindrome(x):
+    s=str(x)
+    return s==s[::-1]
+    
+def cal(n1,n2):
+    palindrome=[]
+    for i in range(n1,n2+1):
+        if is_palindrome(i):
+            palindrome.append(i)
+    return palindrome
+    
+print(cal(140,200))
+
+cap.py
+
+def cap_text(text):
+    '''
+    capitalize the string
+    '''
+    return text.title()
+
+
+import unittest
+import cap
+
+class TestCap(unittest.TestCase):
+    def test_capitalize_single_word(self):
+        text = 'python'
+        result = cap.cap_text(text)
+        self.assertEqual(result, 'Python')
+
+    def test_capitalize_multiple_words(self):
+        text = 'python man'
+        result = cap.cap_text(text)
+        self.assertEqual(result, 'Python Man')
+
+    def test_capitalize_empty_string(self):
+        text = ''
+        result = cap.cap_text(text)
+        self.assertEqual(result, '')
+
+    def test_capitalize_number_and_text(self):
+        text = '123abc'
+        result = cap.cap_text(text)
+        self.assertEqual(result, '123Abc')
+
+if __name__ == "__main__":
+    unittest.main()
+
