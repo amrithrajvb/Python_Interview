@@ -566,3 +566,56 @@ class TestCap(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
+
+vowels count
+
+        vowels="aeiouAEIOU"
+        string_list=list(s)
+        left,right=0,len(string_list)-1
+
+        
+
+        while left < right:
+
+            if string_list[left] not in vowels:
+                left +=1
+            if string_list[right] not in vowels:
+                right -=1
+
+            if left < right:
+                string_list[left],string_list[right]=string_list[right],string_list[left]
+                left+=1
+                right-=1
+        return ''.join(string_list)
+
+
+
+
+
+
+longest palindrpome
+
+def check_pa(s,low,high):
+    while low < high:
+        if s[low]!=s[high]:
+            return False
+        low+=1
+        high-=1
+    return True
+def pal(s):
+    n=len(s)
+    start=0
+    max_length=1
+    
+    for i in range(n):
+        for j in range(i,n):
+            
+            if check_pa(s,i,j) and (j-i+1) > max_length:
+                start=i
+                max_length=j-i+1
+    return s[start:start+max_length]
+
+if __name__ == "__main__":
+    s = "forgeeksskeegfor"
+    print(pal(s))
+
