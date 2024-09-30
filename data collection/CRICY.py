@@ -569,24 +569,29 @@ if __name__ == "__main__":
 
 vowels count
 
-        vowels="aeiouAEIOU"
-        string_list=list(s)
-        left,right=0,len(string_list)-1
+    def reverse_consonants(s):
+    vowels = "aeiouAEIOU"
+    string_new = list(s)
+    left, right = 0, len(string_new) - 1
 
-        
+    while left < right:
+        # Move left pointer to the next consonant
+        while left < right and string_new[left] in vowels:
+            left += 1
+        # Move right pointer to the previous consonant
+        while left < right and string_new[right] in vowels:
+            right -= 1
 
-        while left < right:
+        if left < right:
+            string_new[left], string_new[right] = string_new[right], string_new[left]
+            left += 1
+            right -= 1
+            
+    return "".join(string_new)
 
-            if string_list[left] not in vowels:
-                left +=1
-            if string_list[right] not in vowels:
-                right -=1
+s = "a.b,."
+print(reverse_consonants(s))
 
-            if left < right:
-                string_list[left],string_list[right]=string_list[right],string_list[left]
-                left+=1
-                right-=1
-        return ''.join(string_list)
 
 
 
