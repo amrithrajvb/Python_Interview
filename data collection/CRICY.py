@@ -592,8 +592,22 @@ vowels count
 s = "a.b,."
 print(reverse_consonants(s))
 
+flower program:[1,0,0,0,0,1],n=1
 
+class Solution:
+    def canPlaceFlowers(self, flowerbed: List[int], n: int) -> bool:
+        len1=len(flowerbed)
+        count=0
+        for i in range(len1):
+            if flowerbed[i]==0:
+                if(i==0 or flowerbed[i-1]==0) and (i==len1-1 or flowerbed[i+1]==0):
+                    flowerbed[i]=1
+                    count+=1
 
+                    
+            if count >=n:
+                return True
+        return count >= n
 
 
 
