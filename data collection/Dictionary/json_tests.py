@@ -14,17 +14,17 @@ while i < len(str1):
 print(data)  # Output: "aaabbbcc"
 
 
-str1="aaabcc"
-d={}
+str1="aaabbbc"
 data=""
-for i in str1:
-    if i not in d:
-        d[i]=1
+d={}
+len1=len(str1)
+for i in range(len1):
+    if str1[i] not in d:
+        d[str1[i]]=1
     else:
-        d[i]+=1
-for key,value in d.items():
-    data+=f"{key}{value}"
-print(d)
+         d[str1[i]]+=1
+for k,v in d.items():
+    data+=f"{k}{v}"
 print(data)
 
 
