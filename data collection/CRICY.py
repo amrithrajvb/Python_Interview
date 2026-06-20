@@ -7,6 +7,22 @@ print(ac("abA"))
 
 # output = 3a2b2c3a
 
+def abc(s):
+    if not s:
+        return ""
+    data=""
+    count=0
+    for i in s:
+        if i.isdigit():
+            count = int(i)
+        else:
+            data +=count *i
+    return data
+                
+Input = "3a2b2c"
+print(abc(Input))
+
+
 #occurence
 
 def abc(s):
