@@ -158,6 +158,36 @@ person2 = Person.fromyearofbirth("arun", 1996)
 print(person2.name)
 print(person.IsAudult(10))
 
+anagram:
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        return sorted(s) == sorted(t)
+
+
+
+def is_anagram(s1,s2):
+    if len(s1) != len(s2):
+        return ""
+    count={}
+    
+    for ch in s1:
+        count[ch]=count.get(ch,0)+1
+        print(count)
+        
+    for ch in s2:
+        if ch not in count:
+            return False
+        count[ch] -=1
+        
+        if count[ch] < 0:
+            return False
+            
+    return count
+        
+        
+print(is_anagram("listen", "silent"))
+
 #amstrong
 n = 153
 temp = n
